@@ -1,0 +1,59 @@
+.home {
+    background-color: #e0d8b0;
+    .row-1 {
+      margin-top: 0.5rem;
+      .site-description {
+        font-size: 1.5em;
+      }
+    }
+    .row-1 img{
+      width: 40%;
+    }
+    section {
+      display: flex;
+      margin-bottom: 0.5rem;
+      padding-bottom: 2rem;
+      .row-2 {
+        flex: 1;
+        margin: 0rem 0.5rem;
+        ul {
+          display: inline-block;
+        }
+      }
+    }
+    section:first-child{
+      padding-bottom: 5rem;
+    }
+    section:last-child{
+      margin-bottom: 0rem;
+      display: flex;
+      flex-direction: column;
+    }
+    #stackCarousel {
+      margin: 0 30%;
+      display: flex;
+      flex-direction: column;
+    }
+  .collapse-area {
+    .btn {
+      width: 100%;
+    }
+    &:first-child{
+    margin-bottom: 2rem;
+    }
+  }
+}
+@keyframes fadeInOutAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeInOut {
+  animation: fadeInOutAnimation 0.5s;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-in-out;
+}
