@@ -1,5 +1,5 @@
 <template>
-    <main class="home">
+    <div class="home">
     <section>
        <b-card
        img-left
@@ -114,7 +114,7 @@
   </b-collapse>
   </div>
     </section>
-  </main>
+  </div>
 </template>
 
 <script>

@@ -3,7 +3,7 @@
     .row-1 {
       margin-top: 0.5rem;
       .site-description {
-        font-size: 1.5em;
+        font-size: 3vw;
       }
     }
     .row-1 img{
@@ -13,6 +13,28 @@
       display: flex;
       margin-bottom: 0.5rem;
       padding-bottom: 2rem;
+      @media (max-width: 1200px) {
+        flex-direction: column;
+        .card {
+          font-size: 2vw;
+        h2 {
+          font-size: 4vw;
+        }
+        }
+        }
+      @media (max-width: 800px){
+        .card {
+          h2 {
+            font-size: 5vw;
+          }
+          h3 {
+            font-size: 4vw;
+          }
+          p, ul {
+            font-size: 3vw;
+          }
+        }
+      }
       .row-2 {
         flex: 1;
         margin: 0rem 0.5rem;

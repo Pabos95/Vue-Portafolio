@@ -2,12 +2,15 @@
   <nav>
      <b-nav :vertical="this.$vssWidth<600 ?true:false" tabs>
      <b-form-select @change="changeLocale" v-model="$i18n.locale" :options="options"></b-form-select>
-     <b-nav-item title="Home" :to="{path:'/home', params: { lang : currentLanguage } }"><p>{{ $t("home") }}</p></b-nav-item>
-     <b-nav-item title="Bio" :to="{path: '/bio', params: {lang : currentLanguage } }"><p>{{ $t("bio") }}</p></b-nav-item>
-      <b-nav-item title="Contact" :to="{path: '/contact', params: {lang : currentLanguage} }"><p>{{ $t("contact-me") }}</p></b-nav-item>
+     <b-nav-item title="Home" :to="{path:'/home'}"><p>{{ $t("home") }}</p></b-nav-item>
+     <b-nav-item title="Bio" :to="{path: '/bio'}"><p>{{ $t("bio") }}</p></b-nav-item>
+      <b-nav-item title="Contact" :to="{path: '/contact'} "><p>{{ $t("contact-me") }}</p></b-nav-item>
+      <b-nav-item title="Blog" :to="{path: '/blog'} "><p>Blog</p></b-nav-item>
    </b-nav>
   </nav>
+  <main>
   <router-view/>
+  </main>
   <AppFooter/>
 </template>
 

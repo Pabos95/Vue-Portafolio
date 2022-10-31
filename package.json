@@ -10,6 +10,7 @@
   "dependencies": {
     "@coreui/vue": "^4.4.0",
     "@popperjs/core": "^2.11.6",
+    "@supabase/supabase-js": "^2.0.4",
     "bootstrap": "^5.2.1",
     "bootstrap-vue-3": "^0.3.7",
     "core-js": "^3.8.3",
