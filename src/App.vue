@@ -57,8 +57,11 @@ export default {
           { value: 'pt', text: 'Português' }],
     }
   },
+  mounted(){
+    localStorage.setItem('language', this.currentLanguage);
+  },
   methods: {
-    /** 
+    /**
      * This function changes the language to the one chosen in the dropdown and saves it on the local storage
      * @param {string} newVal - The new value of the locale (en, pt or es)
      * **/

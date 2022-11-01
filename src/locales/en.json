@@ -8,7 +8,7 @@
 "email-description": "This email will not be shared with anyone else",
 "last-name": "Last name",
 "subscribe": "Subscribe",
-"sign-up": "Inscribase a mi boletin de noticias",
+"sign-up": "Subscribe to my newsletter",
 "profile-picture": "Picture of Esteban Aguilar",
 "hire-me": "Why hire me?",
 "no-blog-posts": "No blog posts in English",
@@ -38,5 +38,8 @@
 "professional-experience-2020": "2020-Present Front End Web Developer - Accenture. Belén, Costa Rica",
 "adaptability": "adaptability",
 "learner": "Continous learning",
-"coder-dojo": "Helping kids from Costa Rica to learn the basics of programming"
+"coder-dojo": "Helping kids from Costa Rica to learn the basics of programming",
+"author": "Author",
+"tags": "Tags",
+"date": "Date"
 }

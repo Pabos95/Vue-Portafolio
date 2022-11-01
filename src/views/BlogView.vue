@@ -1,5 +1,5 @@
 <template>
-  <div class="blog"> 
+  <div class="blog">
   <section>
       <h1 v-if="posts.length == 0 && postsFetched">
        {{ $t('no-blog-posts')}}
@@ -25,7 +25,7 @@ export default{
   }),
     async mounted() {
     await this.fetchPosts();
-    this.postsFetched = true; 
+    this.postsFetched = true;
   },
   created() {
     const database = new DatabaseService();
@@ -46,14 +46,17 @@ export default{
         console.error(error)
         return
       }
-
       this.setPosts(data)
     },
     /***
-     * Setter for the posts returned in the request
+     * @description Setter for the posts returned in the request and update the vuex state
+     * @param posts The array with the results from the call to Supabase
      ***/
     setPosts(posts) {
       this.posts = posts;
+      posts.forEach((element)=> {
+         this.$store.dispatch('setArticle', element);
+      });
     }
   },
 };

@@ -1,6 +1,6 @@
 import BootstrapVue3 from 'bootstrap-vue-3';
 import { createApp } from 'vue';
-import { createStore } from 'vuex'
+import { createStore } from 'vuex';
 import * as mdb from 'mdb-vue-ui-kit';
 import App from './App.vue';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -9,30 +9,30 @@ import 'mdb-vue-ui-kit/css/mdb.min.css';
 import i18n from "./i18n";
 import router from './router'
 import VueSocialSharing from 'vue-social-sharing';
+import createPersistedState from "vuex-persistedstate";
 const store = createStore({
+  namespaced: true,
     state () {
       return {
-        blogPostDescription: '',
-        blogPostTitle: '',
+        articles: [],
       }
     },
-    mutuations: {
-       SET_BLOG_POST_TITLE(state, title){
-        state.blogPostTitle = title;
+    mutations: {
+       SET_ARTICLE(state, article){
+        if(!state.articles.find(element => element.id === article.id)){
+        state.articles.push(article);
+        }
        },
-       SET_BLOG_POST_DESCRIPTION(state, description){
-        state.blogPostDescription = description;
-       }
     },
     actions: {
-      setTitle({commit}, newTitle){
-        commit('SET_BLOG_POST_TITLE', newTitle);
+      setArticle({commit}, newArticle){
+        commit('SET_ARTICLE', newArticle);
       },
-      setDescription({commit}, newDescription){
-        commit('SET_BLOG_POST_DESCRIPTION', newDescription);
-      }
     },
-
+     getters: {
+      getArticlesById: (state) => (id) => state.articles.find(article => article.id === id)
+     },
+     plugins: [createPersistedState()],
   })
 const app = createApp(App).use(router);
 app.use(store);
