@@ -1,5 +1,5 @@
 <template>
-  <main class="contact-form">
+  <section class="contact-form">
     <h1>{{$t('inquiry')}}</h1>
     <form accept-charset="UTF-8" action="https://www.formbackend.com/f/8875e588e757de67" method="POST">
       <div class="form-fields">
@@ -21,7 +21,7 @@
 
       <button type="submit">Send message</button>
     </form>
-    </main>
+    </section>
 </template>
 
 <style scoped>
