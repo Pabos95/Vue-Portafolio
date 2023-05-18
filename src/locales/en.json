@@ -1,7 +1,11 @@
 {"home": "Home",
 "language": "Language",
 "welcome-message": "Hello, I am Esteban Aguilar. Welcome to my website.",
+"message": "Message",
 "bio":"Biography",
+"bio-paragraph1": "I was born in San José, Costa Rica. ",
+"inquiry": "Send your inquiry",
+"name": "Name",
 "contact-me": "Contact me",
 "first-name": "First name",
 "middle-name": "Middle name",
@@ -26,6 +30,7 @@
 "leadership-courses": "Leadership Courses Completed",
 "language-certifications": "Language Certifications",
 "professional-experience": "Professional Experience",
+"your-email": "Email",
 "email": "Send an email",
 "website-developed": "This website was developed using Vue3, with libraries Bootstrap Vue 3 and MDB Vue",
 "chat-whatsapp": "Chat by whatsapp",
@@ -41,5 +46,6 @@
 "coder-dojo": "Helping kids from Costa Rica to learn the basics of programming",
 "author": "Author",
 "tags": "Tags",
+"subject": "Subject",
 "date": "Date"
 }
