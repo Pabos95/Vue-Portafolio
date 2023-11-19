@@ -110,6 +110,7 @@
     <b-card>
       <p class="card-text"> {{ $t('professional-experience-2019') }} </p>
       <p class="card-text"> {{ $t('professional-experience-2020') }} </p>
+      <p class="card-text"> {{ $t('professional-experience-2023') }} </p>
     </b-card>
   </b-collapse>
   </div>
